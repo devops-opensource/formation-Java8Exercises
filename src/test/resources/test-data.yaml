@@ -1,0 +1,10 @@
+name: Java8Exercise
+products:
+  - name: laptop
+    id: 100
+    company: FutureShop
+    price: 1000.50
+  - name: chair
+    id: 204
+    company: TheBreeck
+    price: 900.25

@@ -1,0 +1,70 @@
+name: Java8Exercise
+products:
+  - name: laptop
+    id: 100
+    company: FutureShop
+    price: 1000.50
+  - name: laptop
+    id: 101
+    company: FutureShop
+    price: 800.99
+  - name: laptop
+    id: 102
+    company: FutureShop
+    price: 2000
+  - name: laptop
+    id: 103
+    company: FutureShop
+    price: 2000
+  - name: laptop
+    id: 104
+    company: FutureShop
+    price: 2000
+  - name: laptop
+    id: 105
+    company: FutureShop
+    price: 500.25
+  - name: laptop
+    id: 106
+    company: FutureShop
+    price: 800.99
+  - name: laptop
+    id: 107
+    company: FutureShop
+    price: 3000
+  - name: laptop
+    id: 108
+    company: Compucenter
+    price: 400
+  - name: laptop
+    id: 109
+    company: Compucenter
+    price: 400
+  - name: laptop
+    id: 110
+    company: Compucenter
+    price: 3000
+  - name: laptop
+    id: 111
+    company: Compucenter
+    price: 1000.50
+  - name: desk
+    id: 200
+    company: TheBreeck
+    price: 500.99
+  - name: desk
+    id: 201
+    company: TheBreeck
+    price: 2000.95
+  - name: desk
+    id: 202
+    company: TheBreeck
+    price: 600.50
+  - name: chair
+    id: 203
+    company: TheBreeck
+    price: 700
+  - name: chair
+    id: 204
+    company: TheBreeck
+    price: 900.25
