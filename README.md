@@ -4,7 +4,8 @@ Java 8 exercises showcasing various changes brought in since java 7 such as stre
 
 ## Gradle commands
 
-| Command  | Description         |
-|:---------|:--------------------|
-| Build    | ``./gradlew build`` |
-| Run Main | ``./gradlew run``   |
+| Action    | Command (Linux, Mac) | Command (Windows)     |
+|:----------|:---------------------|:----------------------|
+| Build     | ``./gradlew build``  | ``gradlew.bat build`` |
+| Run Tests | ``./gradlew test``   | ``gradlew.bat test``  |
+| Run Main  | ``./gradlew run``    | ``gradlew.bat run``   |

@@ -1,10 +1,11 @@
 package com.gologic.formation.dto;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
- * Our Product DTO (Data Transfer Object) that is used throughout the exercises
+ * Product data class. Getters Setters needed for SnakeYaml to deserialize
  */
 public class Product {
 
@@ -49,5 +50,23 @@ public class Product {
 
     public Date getCreatedDate() {
         return createdDate;
+    }
+
+    public LocalDate getLocalDate() {
+
+        // TODO: convert util.Date to time.LocalDate
+
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", company='" + company + '\'' +
+                ", price=" + price +
+                ", createdDate=" + createdDate +
+                '}';
     }
 }

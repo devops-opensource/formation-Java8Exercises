@@ -2,6 +2,9 @@ package com.gologic.formation.dto;
 
 import java.util.List;
 
+/**
+ * Application data class. Getters Setters needed for SnakeYaml to deserialize
+ */
 public class Application {
 
     private String name;
@@ -21,5 +24,13 @@ public class Application {
 
     public void setProducts(List<Product> products) {
         this.products = products;
+    }
+
+    @Override
+    public String toString() {
+        return "Application{" +
+                "name='" + name + '\'' +
+                ", products=" + products +
+                '}';
     }
 }
