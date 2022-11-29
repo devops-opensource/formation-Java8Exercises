@@ -13,7 +13,7 @@ public class Product {
     private String company;
     private BigDecimal price;
 
-    private Date createdDate;
+    private Date createdDate; // TODO: implement LocalDate and conversion functions to support migrations (of Date to LocalDate)
 
     public int getId() {
         return id;
