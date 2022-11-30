@@ -21,4 +21,5 @@ public interface IProductService {
      */
     Iterable<Product> getAll(BigDecimal minPrice, BigDecimal maxPrice);
 
+    // TODO: introduce default method to output anything..
 }

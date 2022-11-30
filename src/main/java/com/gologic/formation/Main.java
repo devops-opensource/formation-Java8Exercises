@@ -18,7 +18,6 @@ public class Main {
 
         printHeaderLog("START Java 8 Exercises");
 
-
         loadData();
         initServiceClass();
 

@@ -19,10 +19,6 @@ public class ProductService implements IProductService {
         this.application = application;
     }
 
-    // TODO: implement using Java 7 loops (no streams)
-    // TODO: introduce optional for parametrized searches
-    // TODO: introduce predicates for sorting. Find other examples of Predicates/
-
     @Override
     public Iterable<Product> getAll() {
 
@@ -68,4 +64,6 @@ public class ProductService implements IProductService {
         LOG.debug(String.format("Returning %d products", foundProducts.size()));
         return foundProducts;
     }
+
+    // TODO: Introduce new methods to return list sorted by price, name, descending order
 }
