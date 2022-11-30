@@ -37,7 +37,7 @@ public class ProductService implements IProductService {
 
         for(Product p : application.getProducts()) {
 
-            if(p.getName().equalsIgnoreCase(name)) {
+            if(p.getName().equals(name)) {
                 foundProducts.add(p);
                 LOG.debug(String.format("Found matching product %s", p));
             }

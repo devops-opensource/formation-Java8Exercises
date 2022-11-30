@@ -38,4 +38,34 @@ public class Main {
         LOG.info("     " + message);
         LOG.info("-----------------------------------------------------");
     }
+
+    private static void exerciseOne_lambda_searchProducts() {
+
+        // TODO: stream, optional, equalsIgnoreCase
+    }
+
+    private static void exerciseTwo_lambda_displayProducts() {
+
+        // TODO: forEach
+    }
+
+    private static void exerciseThree_lambda_extractProducts() {
+
+        // TODO: stream filter map, from stream to List
+    }
+
+    private static void exerciseThree_lambda_extractProductsAsMap() {
+
+        // TODO: stream filter map, from stream to HashMap (k v)
+    }
+
+    private static void exerciseFour_date_toLocalDate() {
+
+        // TODO: add method to convert Date to LocalDateTime with any desired TimeZone of your choice
+    }
+
+    private static void exerciseFive_interface_default() {
+
+        // TODO: default method in interface
+    }
 }
