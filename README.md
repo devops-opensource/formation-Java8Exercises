@@ -14,5 +14,21 @@ Le package manger c'est Gradle, configurer pour être compiler en Java 8.
 | Run Tests | ``./gradlew test``   | ``gradlew.bat test``  |
 | Run Main  | ``./gradlew run``    | ``gradlew.bat run``   |
 
-## Exercise 1
+## Exercises
 
+LEs exercises se trouve dans les classes static préfixer avec Exercise
+- ExerciseStreams
+- ExerciseInterface
+- ExerciseDates
+
+## Cheatsheet
+
+Convertir une util.Date en Epoch Time (secondes)
+```
+long epoch = date.toInstant().toEpochMilli() / 1000;
+```
+
+Convertir une LocalDateTime en Epoch Time (secondes)
+```
+long epoch = localDateTime.atZone(ZoneId.of("America/New_York")).toEpochSecond();
+```

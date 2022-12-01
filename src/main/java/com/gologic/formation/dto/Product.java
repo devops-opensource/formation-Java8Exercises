@@ -1,7 +1,6 @@
 package com.gologic.formation.dto;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -9,12 +8,22 @@ import java.util.Date;
  */
 public class Product {
 
+    public Product() {
+    }
+
+    public Product(int id, String name, String company, BigDecimal price) {
+        this.id = id;
+        this.name = name;
+        this.company = company;
+        this.price = price;
+    }
+
     private int id;
     private String name;
     private String company;
     private BigDecimal price;
 
-    private Date createdDate; // TODO: implement LocalDate and conversion functions to support migrations (of Date to LocalDate)
+    private Date createdDate;
 
     public int getId() {
         return id;
@@ -49,14 +58,11 @@ public class Product {
     }
 
     public Date getCreatedDate() {
+
+        if(createdDate == null)
+            createdDate = new Date();
+
         return createdDate;
-    }
-
-    public LocalDate getLocalDate() {
-
-        // TODO: convert util.Date to time.LocalDate
-
-        return null;
     }
 
     @Override
@@ -66,7 +72,7 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", company='" + company + '\'' +
                 ", price=" + price +
-                ", createdDate=" + createdDate +
+                ", createdDate=" + getCreatedDate() +
                 '}';
     }
 }
