@@ -24,7 +24,7 @@ public class Main {
         loadData();
 
         ExerciseStreams.launchExercises(appData.getProducts());
-        ExerciseInterface.launchExercises(productService);
+        ExerciseInterface.launchExercises(productService, appData.getProducts());
 
         Optional<Product> p = appData.getProducts().stream().findFirst();
         p.ifPresent(product -> ExerciseDates.launchExercises(product.getCreatedDate()));

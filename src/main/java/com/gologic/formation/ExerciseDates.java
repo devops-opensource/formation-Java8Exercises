@@ -36,7 +36,7 @@ public class ExerciseDates {
 
         LOG.info("exercise_toLocalDateConversion()");
 
-        // TODO: Convertir la date en LocalDate, ensuite comparer les deux dates en assurant qu'ils font référence au même epoch time (date et time).
+        // TODO: Convertir la date en LocalDate, ensuite comparer les deux objets de dates avec leurs epoch time
     }
 
     private static void exercise_ToLocalDateTime_WithTimeZone(Date date) {

@@ -23,6 +23,8 @@ LEs exercises se trouve dans les classes static préfixer avec Exercise
 
 ## Cheatsheet
 
+### Dates
+
 Convertir une util.Date en Epoch Time (secondes)
 ```
 long epoch = date.toInstant().toEpochMilli() / 1000;

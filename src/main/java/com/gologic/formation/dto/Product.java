@@ -1,11 +1,16 @@
 package com.gologic.formation.dto;
 
+import com.gologic.formation.annotation.Numeric;
+import com.gologic.formation.annotation.Sensitive;
+import com.gologic.formation.annotation.Serialize;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * Product data class. Getters Setters needed for SnakeYaml to deserialize
  */
+@Serialize
 public class Product {
 
     public Product() {
@@ -18,10 +23,12 @@ public class Product {
         this.price = price;
     }
 
-    private int id;
+    @Sensitive
+    private @Numeric int id;
     private String name;
     private String company;
-    private BigDecimal price;
+    @Sensitive
+    private @Numeric BigDecimal price;
 
     private Date createdDate;
 
