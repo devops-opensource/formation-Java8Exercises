@@ -69,10 +69,6 @@ public class ExerciseStreams {
 
         LOG.info("exercise_searchProducts()");
 
-        products.stream()
-                .filter(p -> p.getCompany().equalsIgnoreCase("compucenter"))
-                .forEach(product -> LOG.info(" TOTO: " + product));
-
         // TODO: Effectuer une recherche qui retourne toute les produits de la company = 'Compucenter'
     }
     private static void exercise_searchProductsNonExistant(List<Product> products) {
@@ -80,16 +76,6 @@ public class ExerciseStreams {
         LOG.info("exercise_searchProductsNonExistant()");
 
         // TODO: Effectuer une recherche qui retourne un produit qui n'existe potentiellement pas (utiliser le critère name = 'carpet') avec l'aide du Optional
-
-        Optional<Product> p = products.stream()
-                .filter(product -> product.getName().equals("carpet"))
-                .findFirst();
-
-        if(p.isPresent()) {
-            LOG.info("Product found: " + p.get());
-        } else {
-            LOG.info("Product not found");
-        }
     }
     private static void exercise_displayProducts(List<Product> products) {
 
