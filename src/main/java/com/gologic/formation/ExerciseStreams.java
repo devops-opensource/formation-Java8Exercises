@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import java.math.BigDecimal;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -26,6 +27,7 @@ public class ExerciseStreams {
         exercise_processListInParallel(products);
         exercise_predicateListEval(products);
         exercise_predicateEval(products);
+        exercise_parametrizedPredicates(products);
     }
     private static void example_stream(List<Product> products) {
 
@@ -79,7 +81,15 @@ public class ExerciseStreams {
 
         // TODO: Effectuer une recherche qui retourne un produit qui n'existe potentiellement pas (utiliser le critère name = 'carpet') avec l'aide du Optional
 
+        Optional<Product> p = products.stream()
+                .filter(product -> product.getName().equals("carpet"))
+                .findFirst();
 
+        if(p.isPresent()) {
+            LOG.info("Product found: " + p.get());
+        } else {
+            LOG.info("Product not found");
+        }
     }
     private static void exercise_displayProducts(List<Product> products) {
 
