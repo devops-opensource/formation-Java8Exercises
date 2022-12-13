@@ -29,6 +29,10 @@ public class Main {
         Optional<Product> p = appData.getProducts().stream().findFirst();
         p.ifPresent(product -> ExerciseDates.launchExercises(product.getCreatedDate()));
 
+//        LOG.info("----- ANSWERS START -----");
+//        com.gologic.formation.answers.ExerciseStreams.launchExercises(appData.getProducts());
+//        LOG.info("----- ANSWERS END -----");
+
         printHeaderLog("COMPLETED Java 8 Exercises");
     }
 

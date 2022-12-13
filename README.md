@@ -1,6 +1,6 @@
-# Formation Java 8
+# Formation Java 8-9
 
-Cette application Java à pour objectif de faire connaitres certaines nouvelles fonctionnalités de Java 8 et de démontrer comment modifier du code Java 7 en équivalent Java 8.
+Cette application Java à pour objectif de faire connaitres certaines nouvelles fonctionnalités de Java 8-9 et de démontrer comment modifier du code Java 7 en équivalent Java 8.
 
 Java 8 exercises showcasing various changes brought in since java 7 such as streams and dates
 
@@ -34,3 +34,7 @@ Convertir une LocalDateTime en Epoch Time (secondes)
 ```
 long epoch = localDateTime.atZone(ZoneId.of("America/New_York")).toEpochSecond();
 ```
+
+## Réponses
+
+Des réponses se trouve dans le package "answers" pour la classe ExerciseStreams. Par défault cette classe n'est pas appelé par Main

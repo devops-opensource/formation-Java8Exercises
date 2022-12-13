@@ -38,6 +38,7 @@ public class ExerciseInterface {
 
         if(clazz.isAnnotationPresent(Serialize.class)) {
             LOG.info("Class-level Serialize annotation found");
+
         }
 
         for(Field f : clazz.getDeclaredFields()) {

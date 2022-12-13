@@ -4,8 +4,8 @@ plugins {
 }
 
 compileJava {
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
+    sourceCompatibility = '9'
+    targetCompatibility = '9'
 }
 
 group 'com.gologic.formation'
@@ -26,9 +26,9 @@ dependencies {
     implementation group: 'org.yaml', name: 'snakeyaml', version: snakeYamlVersion
     implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: log4jVersion
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: log4jVersion
+    implementation group: 'org.assertj', name: 'assertj-core', version: assertjVersion
 
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junitVersion
-    testImplementation group: 'org.assertj', name: 'assertj-core', version: assertjVersion
     testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junitVersion
 }
 
