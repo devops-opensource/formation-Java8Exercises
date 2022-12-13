@@ -58,7 +58,7 @@ public class ExerciseStreams {
                 .filter(searchPredicate)
                 .collect(Collectors.toList());
 
-        LOG.info( String.format("Found products:"));
+        LOG.info("Found products:");
         foundProducts.forEach(LOG::info);
     }
 
